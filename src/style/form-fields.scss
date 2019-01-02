@@ -1,9 +1,11 @@
 
 // INPUT
-.form-input {
+.form-input,
+.form-textarea {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 129px 500px;
+    grid-template-columns: 3fr 10fr;
+    //grid-template-columns: 129px 500px;
 
     align-items: center;
     width: 629px;
@@ -19,7 +21,8 @@
     }
 }
 
-.form-input {
+.form-input,
+.form-textarea {
     &__title {
         color: $color-red-BA;
         font-size: 1.8rem;
