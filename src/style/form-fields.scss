@@ -41,6 +41,18 @@
     }
 }
 
+.form-textarea {
+    
+    &__title {
+        align-self: start;
+    }
+    &__input {
+        height: 35.5rem;
+        resize: none;
+        padding-top: 1rem;
+    }
+}
+
 // BUTTON
 .form-button {
 
