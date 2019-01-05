@@ -8,7 +8,7 @@
     //grid-template-columns: 129px 500px;
 
     align-items: center;
-    width: 629px;
+    width: 100%;
     justify-content: center;
 
     &__title {
@@ -31,7 +31,8 @@
 }
     &__input {
         height: 4rem;
-        width: 50rem;
+        // width: 50rem;
+        width: 100%;
         border: 1px solid $color-grey-E6;
         border-radius: .5rem;
         padding-left: 2rem;
