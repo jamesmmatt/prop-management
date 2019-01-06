@@ -28,7 +28,16 @@ class NewsletterNewForm extends Component {
                     name='body'
                     type='text'
                     title="Body"
-                    />
+                />
+                <Field
+                    className='sign-in-form__submit'
+                    small={true}
+                    danger={true}
+                    component={FormButton}
+                    name='submit'
+                    type='submit'
+                    title="Submit"
+                />
             </form>
         )
     }
