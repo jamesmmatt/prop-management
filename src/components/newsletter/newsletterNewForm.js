@@ -30,13 +30,22 @@ class NewsletterNewForm extends Component {
                     title="Body"
                 />
                 <Field
-                    className='sign-in-form__submit'
+                    className='new-newsletter-form__submit'
                     small={true}
                     danger={true}
                     component={FormButton}
                     name='submit'
                     type='submit'
                     title="Submit"
+                />
+                <Field
+                    className='new-newsletter-form__cancel'
+                    small={true}
+                    component={FormButton}
+                    name='cancel'
+                    title="Cancel"
+                    type="button"
+                    onClick={this.props.onCancel}
                 />
             </form>
         )
