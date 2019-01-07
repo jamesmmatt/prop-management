@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+
 import NewsletterBox from './newsletterBox';
 import NewsletterLatest from './newsletterLatest';
+
+
 
 class NewsletterDetail extends Component {
 
@@ -16,9 +19,8 @@ class NewsletterDetail extends Component {
         console.log(this.props.newsletterToEdit);
         return (
             <div className='newsletter-detail'>
-                Newsletter Detail
-                <NewsletterBox/>
-                <NewsletterLatest/>
+                <NewsletterBox date={this.props.newsletterToEdit.date}/>
+                <NewsletterLatest {...this.props.newsletterToEdit}/>
             </div>
         )
     }
