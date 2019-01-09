@@ -13,6 +13,7 @@ class NewRequest extends Component {
 
         var formData = new FormData();
         formData.append('title', title);
+        formData.append('body', body);
         formData.append('image', image);
 
         this.props.createNewRequest(this.props._id, formData, () => {

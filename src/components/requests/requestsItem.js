@@ -33,6 +33,7 @@ class RequestsItem extends Component {
 
     render() {
         const { _id, title, body, date, imageUrl, status } = this.props;
+        console.log(this.props);
         const parsedDate = new Date(date);
         return (
             <div id='requests-item' className='requests-item'>
