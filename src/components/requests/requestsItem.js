@@ -6,7 +6,7 @@ import Button from '../button';
 import AnimateHeight from 'react-animate-height';
 
 class RequestsItem extends Component {
-
+    
     constructor() {
         super()
 
@@ -37,34 +37,33 @@ class RequestsItem extends Component {
                 <div className='requests-item__tenant-unit'>
                     Max - Unit 115
                 </div>
-                
                 <div className='requests-item__date'>
                     09/15/97
                 </div>
                 <Button className='requests-item__move' icon='fas fa-wrench' callback={() => console.log('tryna change request status')}/>
-                
                 <div className='requests-item__description'>
-                    <AnimateHeight 
-                       duration={300}
-                       height={this.state.height}
+                    <AnimateHeight
+                        duration={300}
+                        height={this.state.height}
                     >
-                    <div className='requests-item__description'>
-                        <img 
-                            className='requests-item__description-img'
-                            src='http://via.placeholder.com/160x94'                        
-                        />
-                        <p className='requests-item__description-text'>
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        </p>
-                    </div>
+                        <div className='item-description'>
+                            <img 
+                                className='item-description__img'
+                                src='http://via.placeholder.com/160x94'                        
+                            />
+                            <p className='item-description__text'>
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                            </p>
+                        </div>
                     </AnimateHeight>
                 </div>
-                
+
             </div>
         )
     }
 }
+
 export default RequestsItem;
