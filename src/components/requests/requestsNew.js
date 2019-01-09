@@ -23,7 +23,11 @@ class NewRequest extends Component {
                 <NewNewsletterForm
                  onCancel={() => this.onCancel()}
                   onSubmit={(event) => this.onSubmit(event)}
-                  fromTitle='New Request'
+                  formTitle='New Request'
+                  fieldOnePlaceholder='Service Request Title Here'
+                  fieldOneTitle='Service Request Title'
+                  fieldTwoPlaceholder='Description Here'
+                  fieldTwoTitle='Description'
                 />
             </div>
         )
