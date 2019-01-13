@@ -1,4 +1,4 @@
-import  {
+import {
     signUp,
     signIn
 } from './auth';

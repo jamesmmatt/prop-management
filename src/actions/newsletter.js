@@ -7,7 +7,6 @@ import axios from 'axios';
 import { ROOT_URL } from '../config';
 
 export function fetchNewsletters() {
-
     return function(dispatch) {
         const token = localStorage.getItem('token');
         const headers = {headers: {authorization: token}}
@@ -24,12 +23,14 @@ export function fetchNewsletters() {
     }
 }
 
-export function fetchNewsletterWithId(id) {
+
+export function fetchNewsletterWithId(_id) {
     return {
         type: FETCH_NEWSLETTER_ID,
-        payload: id
+        payload: _id
     }
 }
+
 
 export function createNewNewsletter(formData, success) {
     const token = localStorage.getItem('token');
